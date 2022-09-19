@@ -1,0 +1,27 @@
+\section{Risultati}
+L'ontologia Fast Food Facts (OFFF) Contiene 413 classi, 21 proprietà degli oggetti, 13 proprietà dei dati e 494 assiomi logici. I tre valutatori hanno annotato in modo indipendente 430 affermazioni in linguaggio naturale. E' stato annotato ciascuna affermazione in termini di:
+\begin{itemize}
+    \item (0) se l'affermazione non è stata espressa accuratamente dall'ontologia
+    \item (1) se l'affermazione è stata espressa accuratamente dall'ontologia
+\end{itemize}
+Le affermazioni che hanno suscitato una risposta di "non so" sono state annotate come (0). I valutatori hanno raggiunto una notevole affidabilità dell'intercodificatore con una concordanza percentuale media a coppie del 76,1\%. 
+L'accordo a coppie era del 73\% per i valutatori 1 e 2, dell'84,7\% per i valutatori 2 e 3 e del 70,7\% per i valutatori 1 e 3. 
+L'affidabilità dell'intercoder è stata calcolata utilizzando ReCal3 0,1 Alpha per 3+ codificatori. 
+Nella media totale tra i valutatori, i valutatori hanno valutato che il l'ontologia ha rappresentato un numero accurato di affermazioni del 73,0\% (media del 56,5\%, 81,2\% e 81,2\%). 
+Sono stati presi in considerazione 103 affermazioni in tutti questi criteri e sono stati esaminati i problemi con queste affermazioni per valutare la fonte dell'inesattezza di OFFF. 
+Si è notato tre tipi di problemi con l'accuratezza di OFFF: 
+\begin{enumerate}
+    \item scarsa etichettatura delle entità che avrebbero potuto beneficiare di etichette più elaborate per una migliore espressione dell'assioma
+    \item etichettatura errata che esprimeva informazioni che non riflettevano il mondo (ad es. Moka $\subset$ Coffee\_Fact, "ogni moka è un Coffee Fact")
+    \item errori logici e possibile confusione e contesa in cui il problema non era l'etichetta ma un problema con l'associazione dell'affermazione che potrebbe aver portato a confusione o incomprensione (es. DQ\_Treatzza\_Pizza $\subset$ Cake, “ogni DQ Tratzza Pizza è un Cake”).
+\end{enumerate}
+Per il terzo caso, c'erano 24 affermazioni che rientravano in quella categoria. Per il primo e il secondo caso, c'erano rispettivamente 48 e 31 affermazioni. E' stata rivista l'ontologia sulla base di questi disaccordi maggioritari sulla veridicità. 
+Il modello di questa ontologia ha rappresentato fatti poligerarchici di fast food invece di rappresentarli come entità di cibo. Si è orientato il modello ontologico per riflettere una sana organizzazione del fast food, e questo si riflette nel progetto di cui si è discusso in precedenza. 
+Con problemi che ruotano attorno a una maggiore elaborazione delle etichette, sono state aggiunte etichette più espressive aggiungendo termini, come la modifica di Taco $\subset$ Insalata ("ogni taco è un'insalata") a Taco\_Salad $\subset$ Insalata ($\sim$ "ogni insalata di taco è un'insalata"). 
+Per il terzo numero c'era una combinazione di errori di scrittura, come affermazioni duplicate ma errate, e incomprensione dell'accuratezza dell'affermazione. 
+Per gli errori di creazione, si ha avuto un'affermazione come Mushroom\_Swiss\_Burger $\subset$ Mushroom ("ogni hamburger svizzero di funghi è un fungo"), che sono stati successivamente eliminati a causa di un duplicato e di un errore. 
+C'erano affermazioni che si basavano su una conoscenza particolare dell'alimento di alcuni ristoranti (come Dairy Queen e Whataburger) che utilizzavano la propria nomenclatura (ad esempio, Apple\_Bites $\subset$ Apple\_Slices o Hash\_Brown\_Sticks\_Whataburgers). 
+Anche per il terzo numero, c'erano affermazioni che avrebbero potuto essere accurate a seconda della precedente comprensione della definizione dei concetti. 
+Ad esempio, OFFF ha Hot\_Dog come tipo di Fast\_Food\_Sandwich, se si dovesse capire che un panino è un alimento impanato con un qualche tipo di ripieno non di pane. 
+
+L'ultima versione di questa ontologia è disponibile al link del repository git, https://github.com/UTHealth-Ontology/OFFF.
