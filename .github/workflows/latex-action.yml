@@ -9,7 +9,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "*.tex"
+          root_file: "WS_Primo_Assignment/*.tex"
           glob_root_file: true
       - uses: actions/upload-artifact@v2
         with:
