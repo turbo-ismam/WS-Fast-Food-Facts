@@ -9,7 +9,9 @@ jobs:
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@latest
         with:
-          root_file: WS_Primo_Assignment/main.tex
+          root_file: | 
+            WS_Primo_Assignment/main.tex
+            WS_Primo_Assignment/01_Introduzione.tex
       - uses: actions/upload-artifact@v2
         with:
           name: PDF
