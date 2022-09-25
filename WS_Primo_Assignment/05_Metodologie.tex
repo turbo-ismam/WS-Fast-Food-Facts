@@ -10,7 +10,7 @@ Questa attività ha prodotto l'astrazione del metalivello dell'ontologia (Vedi F
      \label{fig:ontology}
 \end{figure}
 Il concetto centrale del metalivello di questa ontologia è il Fatto Nutrizionale. Questo concetto contiene relazioni con la componente nutrizionale, l'ingrediente e gli allergeni. Il meta-livello dell'ontologia è stato creato utilizzando Protégé.
-Successivamente, è stato valutato la veridicità della struttura del meta-livello dell'ontologia utilizzando Hootation, una libreria di software per la generazione di linguaggio naturale per ontologie. 
+Successivamente, è stata valutata la veridicità della struttura del meta-livello utilizzando \emph{Hootation}, una libreria di software per la generazione di linguaggio naturale per ontologie. 
 I valutatori dell'albero (CO, GX e CT) hanno esaminato in modo indipendente le dichiarazioni in lingua naturale tradotte (Burrito\_Pollo\_Sminuzzato $\subset$ Burrito tradotto in "ogni burrito di pollo sminuzzato è un burrito") che esprime ogni assioma logico codificato nell'ontologia. 
 A ciascun valutatore è stato fornito un foglio di calcolo con gli assiomi tradotti e gli è stato chiesto di etichettare le affermazioni: "Sì" se l'assioma logico è accurato, "No" se l'assioma non è accurato o "X" se il valutatore non era sicuro.
 
@@ -18,7 +18,7 @@ A ciascun valutatore è stato fornito un foglio di calcolo con gli assiomi trado
 La Componente nutrizionale ha diverse sottoclassi che alludono a vari dati nutrizionali trovati sulle etichette degli alimenti: proteine, colesterolo, grassi, minerali, ecc. 
 
 Essenzialmente, Componente nutrizionale descrive la quantità di nutrienti che un particolare alimento possiede. È espresso attraverso una proprietà dei dati di \emph{Amount} (in milligrammi, grammi, once, ecc.). 
-Indichiamo anche quantità di vitamine e minerali contenuti in un alimento: ferro, vitamina A, calcio, potassio, ecc. È stato limitato alle vitamine e ai minerali che vengono divulgati dalle fonti online.
+Si indicano anche quantità di vitamine e minerali contenuti in un alimento: ferro, vitamina A, calcio, potassio, ecc. È stato limitato alle vitamine e ai minerali che vengono divulgati dalle fonti online.
 
 \subsection{Allergeni}
 Il fatto nutrizionale include informazioni sugli allergeni, essi sono rappresentati come \emph{Fatto nutrizionale → ha allergeni → allergeni}. Il concetto di \emph{Allergens} ha diversi tipi di dati booleani per alterare l'alimento per il contenuto di allergeni (soia, msg, uova, diario, ecc.).
@@ -42,7 +42,7 @@ Sulla base della selezione limitata di fast food, si sono identificate 10 catego
 
 \subsection{Instance Data Model}
 I dati nutrizionali dei menu dei fast food sono stati rappresentati come esempi unici per l'ontologia. I sopraccitati fast food hanno dati nutrizionali sul sito Web. Sono stati trasferiti i dati dalle sorgenti a un foglio di calcolo per l'importazione. Sono stati utilizzato \emph{Protégéplugin} e \emph{Cellfe}, per eseguire l'importazione di massa dei dati sugli alimenti. 
-Si è creato una serie di regole di importazione personalizzate per Cellfe per normalizzare e aggiungere i dati all'ontologia. La figura \ref{fig:OntologyInstance} visualizza i dati di un'istanza di esempio dall'ontologia dei fatti del fast food. L'elemento \emph{Tefood} istanzia il tipo di fast food. Nell'esempio sopra, Iced Cofee McDonald's (Small) è un esempio di Cofee che è un tipo di bevanda. Questo elemento di dati si collega ad altre informazioni nutrizionali e sugli allergeni utilizzando \emph{hasNutritionalInfo} e \emph{hasAllergens}, come mostrato in Fig. \ref{fig:OntologyInstance}. 
+Si è creato una serie di regole di importazione personalizzate per Cellfe per normalizzare e aggiungere i dati all'ontologia. La figura \ref{fig:OntologyInstance} visualizza i dati di un'istanza di esempio dall'ontologia dei fatti del fast food. L'elemento \emph{Thefood} istanzia il tipo di fast food. Nell'esempio sopra, Iced Cofee McDonald's (Small) è un esempio di Cofee che è un tipo di bevanda. Questo elemento di dati si collega ad altre informazioni nutrizionali e sugli allergeni utilizzando \emph{hasNutritionalInfo} e \emph{hasAllergens}, come mostrato in Fig. \ref{fig:OntologyInstance}. 
 
 \begin{figure}[H]
     \centering
@@ -55,7 +55,7 @@ Si è creato una serie di regole di importazione personalizzate per Cellfe per n
 In questa fase sono state raccolte le domande dei consumatori facendo ricerche web utilizzando come chiave di ricerca frasi come "Domande frequenti \\sull'alimentazione" e "Domande più comuni sull'alimentazione". Sono state selezionate sei fonti, ciascuna delle quali elencava le domande frequenti relative alla nutrizione a cui hanno risposto nutrizionisti registrati o dietologi registrati. Le fonti hanno prodotto 41 domande che sono state ristrette per includere 19 domande che sono state utilizzate per espandere l'ontologia.
 La tabella \ref{fig:Questions} elenca le 19 domande finali relative ai risultati associati a zucchero, sodio e grassi.
 La figura \ref{fig:ConcettiAggiuntivi} modella i concetti aggiuntivi e le relazioni con OFFF. Ciò include l'aggiunta di due nuovi concetti: risultati sulla salute e qualità della dieta che sono stati estesi attraverso il concetto esistente di componente nutrizionale.
-Questo includeva anche ulteriori sottoclassi dei suddetti concetti, tutte mostrate in Fig. \ref{fig:ConcettiAggiuntivi}. Queste derivazioni sono state codificate nell'ontologia dei fatti del fast food utilizzando Protégé.
+Questo include anche ulteriori sottoclassi dei suddetti concetti, tutte mostrate in Fig. \ref{fig:ConcettiAggiuntivi}. Queste derivazioni sono state codificate nell'ontologia dei fatti del fast food utilizzando Protégé.
 
 \begin{figure}[H]
     \centering
