@@ -1,5 +1,2 @@
-# WS-Fast-Food-Facts
-Analisi basata sull'ontologia "fast food facts"
-asd
-asdasd
-adsasdasd
+# Web Semantico - Ontology Fast Food Facts
+Analisi descrizione dell'ontologia "fast food facts" (OFFF).
