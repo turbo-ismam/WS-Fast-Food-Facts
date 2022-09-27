@@ -10,9 +10,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: |
-            WS_Primo_Assignment/main.tex
-            WS_Primo_Assignment/01_Introduzione.tex
+          root_file: WS_Primo_Assignment/main.tex
       - uses: actions/upload-artifact@v2
         with:
           name: PDF
